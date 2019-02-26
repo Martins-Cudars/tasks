@@ -22,7 +22,26 @@ body {
   padding: 4rem 1rem;
 }
 
-#testing-zone {
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 2rem;
+}
+
+#font-select {
+  font-size: 1.125rem;
+  background-color: #fff;
+  border: 1px solid black;
+  width: 200px;
+  height: 2em;
+  padding: 0 .5rem;
+}
+
+#testing-area {
   width: 100%;
   height: 100%;
   border: 1px solid #1e1e1e;
