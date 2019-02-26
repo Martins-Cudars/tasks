@@ -1,0 +1,100 @@
+/**
+ *
+ * General layout
+ *
+ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  /* make body full height viewport */
+  height: 100vh;
+  background-color: #e2e2e2;
+  margin: 0;
+}
+
+#center-me {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+/**
+ *
+ * Controls
+ *
+ */
+
+
+.controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.btn {
+  padding: .5rem 1rem;
+  border: 0;
+  background-color: #fff;
+}
+
+.btn + .btn {
+  margin-left: 1rem;
+}
+
+/**
+ *
+ * Methods
+ *
+ */
+
+
+/* this is probobly trick question or i have gotten way too lazy with flex,
+*  but margin: auto allows only horizontal center, to have vertical centering,
+*  it needs flex container
+*/
+
+.body-margin {
+  display: flex;
+}
+
+.div-margin {
+  width: 125px;
+  height: 52px;
+  margin: auto;
+}
+
+.body-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-transform {
+  position: relative;
+}
+
+.div-transform {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.body-grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
