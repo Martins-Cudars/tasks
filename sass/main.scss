@@ -1,0 +1,67 @@
+/**
+ *
+ * Set colors
+ *
+ */
+
+$colors: (
+  'aqua':   #7AFDD6,
+  'mint':   #77FF94,
+  'kiwi':   #A1E44D,
+  'palm':   #60993E,
+  'blue':   #08415C,
+  'teal':   #388697,
+  'orange': #E8871E,
+  'black':  #000411,
+  'purple': #160C28,
+  'gray':   #AEB7B3
+);
+
+
+/**
+ *
+ * Mixin
+ * Use as bgcolor(colorname);
+ * If color does not exist, will show error
+ *
+ */
+
+@mixin bgcolor($color) {
+  $value: map-get($colors, $color);
+  // border: $value;
+
+  @if $value == null {
+    @error "#{$color} is not defined";
+  } 
+  
+  background-color: $value;
+
+}
+
+
+/* test mixin */
+.btn-orange {
+  @include bgcolor('orange'); 
+}
+
+
+/* this should fail. uncomment to test */
+// .btn-olive {
+//   @include bgcolor('olive');
+// }
+
+
+/**
+ *
+ * Generate .bg-* classes
+ *
+ */
+
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+
+

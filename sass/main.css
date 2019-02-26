@@ -1,0 +1,69 @@
+/*========================================================
+=            This is generated from main.scss            =
+========================================================*/
+
+
+
+
+/**
+ *
+ * Set colors
+ *
+ */
+/**
+ *
+ * Mixin
+ * Use as bgcolor(colorname);
+ * If color does not exist, will show error
+ *
+ */
+/* test mixin */
+.btn-orange {
+  background-color: #E8871E;
+}
+
+/* this should fail. uncomment to test */
+/**
+ *
+ * Generate .bg-* classes
+ *
+ */
+.bg-aqua {
+  background-color: #7AFDD6;
+}
+
+.bg-mint {
+  background-color: #77FF94;
+}
+
+.bg-kiwi {
+  background-color: #A1E44D;
+}
+
+.bg-palm {
+  background-color: #60993E;
+}
+
+.bg-blue {
+  background-color: #08415C;
+}
+
+.bg-teal {
+  background-color: #388697;
+}
+
+.bg-orange {
+  background-color: #E8871E;
+}
+
+.bg-black {
+  background-color: #000411;
+}
+
+.bg-purple {
+  background-color: #160C28;
+}
+
+.bg-gray {
+  background-color: #AEB7B3;
+}
